@@ -7,8 +7,8 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="20" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,10 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    <uses-library android:name="android.test.runner" />
+
+        <uses-library android:name="android.test.runner" />
     </application>
-        <instrumentation
+
+    <instrumentation
         android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="com.example.xml"  />
+        android:targetPackage="com.example.xml" />
 
 </manifest>

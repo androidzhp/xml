@@ -16,7 +16,7 @@ public class UserInfoUtils {
 
 	public UserInfoUtils(Context context) {
 		super();
-		//file = new File(context.getFilesDir().getPath(), "info.txt");
+		// file = new File(context.getFilesDir().getPath(), "info.txt");
 		file = new File(Environment.getExternalStorageDirectory().getPath(), "info.txt");
 	}
 

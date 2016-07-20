@@ -15,12 +15,12 @@
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:password="true"
-        android:hint="请输入密码" />
+        android:hint="请输入密码"
+        android:password="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content" >
 
         <CheckBox
             android:id="@+id/cb_ischeck"
@@ -36,4 +36,13 @@
             android:text="登录" />
     </RelativeLayout>
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
