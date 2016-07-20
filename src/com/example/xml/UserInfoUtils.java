@@ -9,13 +9,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 import android.content.Context;
+import android.os.Environment;
 
 public class UserInfoUtils {
 	private File file;
 
 	public UserInfoUtils(Context context) {
 		super();
-		file = new File(context.getFilesDir().getPath(), "info.txt");
+		//file = new File(context.getFilesDir().getPath(), "info.txt");
+		file = new File(Environment.getExternalStorageDirectory().getPath(), "info.txt");
 	}
 
 	public boolean saveInfo(String name, String pwd) {
